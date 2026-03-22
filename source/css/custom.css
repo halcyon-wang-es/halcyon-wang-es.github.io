@@ -1,0 +1,119 @@
+/* ===== Typography ===== */
+
+/* 正文 */
+body,
+.markdown-body,
+.post-content,
+.index-content,
+.note,
+.page-content {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.8;
+  color: #2f3441;
+}
+
+/* 首页 banner 主标题与副标题 */
+.banner-text,
+.banner-text .h2,
+.banner-text .slogan,
+.banner-text .text {
+  font-family: "Baskerville", "Times New Roman", "Songti SC", "STSong", serif;
+  letter-spacing: 0.02em;
+}
+
+/* 页面标题、文章标题 */
+.post-title,
+.page-header h1,
+.page-title,
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  font-family: "Baskerville", "Times New Roman", "Songti SC", "STSong", serif;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  color: #1f2430;
+}
+
+/* 导航 */
+.navbar,
+.nav-link,
+.navbar-nav .nav-item .nav-link {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* 首页 slogan 稍微更精致一点 */
+.banner-text .text,
+.banner-text .slogan {
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* 段落更舒展 */
+.markdown-body p,
+.post-content p,
+.page-content p {
+  margin-bottom: 1rem;
+}
+
+/* 链接 */
+.markdown-body a,
+.post-content a,
+.page-content a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(79, 70, 229, 0.18);
+  transition: all 0.2s ease;
+}
+
+.markdown-body a:hover,
+.post-content a:hover,
+.page-content a:hover {
+  text-decoration: none;
+  border-bottom-color: rgba(79, 70, 229, 0.45);
+}
+
+/* 代码字体 */
+code,
+pre,
+.highlight {
+  font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+}
+
+/* ===== Projects page polish ===== */
+
+/* 项目页标题稍微更大气 */
+.project-title {
+  font-family: "Baskerville", "Times New Roman", "Songti SC", "STSong", serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* 让项目标签更圆润 */
+.project-tag {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* 深色模式微调 */
+[data-user-color-scheme="dark"] body,
+[data-user-color-scheme="dark"] .markdown-body,
+[data-user-color-scheme="dark"] .post-content,
+[data-user-color-scheme="dark"] .page-content {
+  color: #d7dde8;
+}
+
+[data-user-color-scheme="dark"] .post-title,
+[data-user-color-scheme="dark"] .page-header h1,
+[data-user-color-scheme="dark"] .page-title,
+[data-user-color-scheme="dark"] .markdown-body h1,
+[data-user-color-scheme="dark"] .markdown-body h2,
+[data-user-color-scheme="dark"] .markdown-body h3,
+[data-user-color-scheme="dark"] .markdown-body h4 {
+  color: #f3f5f7;
+}

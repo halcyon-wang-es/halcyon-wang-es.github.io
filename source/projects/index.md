@@ -14,26 +14,32 @@ layout: page
 .project-card {
   position: relative;
   overflow: hidden;
-  border-radius: 22px;
-  padding: 1.4rem 1.4rem 1.2rem;
-  background: rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 28px;
+  padding: 1.6rem 1.5rem 1.35rem;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 27, 40, 0.96) 0%,
+    rgba(17, 23, 34, 0.98) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow:
-    0 10px 30px rgba(31, 41, 55, 0.08),
-    0 2px 10px rgba(31, 41, 55, 0.05);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  min-height: 220px;
+    0 18px 40px rgba(5, 10, 20, 0.28),
+    0 6px 18px rgba(5, 10, 20, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  min-height: 260px;
 }
 
 .project-card::before {
   content: "";
   position: absolute;
-  inset: 0 0 auto 0;
-  height: 92px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.18), rgba(56, 189, 248, 0.14));
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(139, 92, 246, 0.26), transparent 34%),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.18), transparent 30%),
+    linear-gradient(180deg, rgba(99, 102, 241, 0.10), transparent 42%);
   z-index: 0;
+  pointer-events: none;
 }
 
 .project-card:nth-child(3n+1)::before {
@@ -49,10 +55,11 @@ layout: page
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   box-shadow:
-    0 18px 40px rgba(31, 41, 55, 0.12),
-    0 6px 14px rgba(31, 41, 55, 0.08);
+    0 24px 54px rgba(5, 10, 20, 0.34),
+    0 10px 24px rgba(5, 10, 20, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .project-inner {
@@ -68,7 +75,7 @@ layout: page
 }
 
 .project-title a {
-  color: #1f2937;
+  color: #f8fafc;
   text-decoration: none;
 }
 
@@ -78,10 +85,10 @@ layout: page
 }
 
 .project-desc {
-  margin: 0 0 1rem 0;
-  color: #4b5563;
-  font-size: 0.96rem;
-  line-height: 1.72;
+  margin: 0 0 1.3rem 0;
+  color: rgba(226, 232, 240, 0.9);
+  font-size: 1.02rem;
+  line-height: 1.7;
 }
 
 .project-meta {
@@ -94,28 +101,28 @@ layout: page
 .project-tag {
   display: inline-flex;
   align-items: center;
-  padding: 0.34rem 0.78rem;
+  padding: 0.42rem 0.85rem;
   border-radius: 999px;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.72);
-  color: #334155;
-  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(8px);
 }
 
 .project-link {
-  margin-top: 1.2rem;
+  margin-top: 1.35rem;
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   font-weight: 600;
-  color: #4f46e5;
+  color: #a5b4fc;
   text-decoration: none;
 }
 
 .project-link:hover {
+  color: #c7d2fe;
   text-decoration: none;
-  opacity: 0.85;
 }
 
 .empty-state {

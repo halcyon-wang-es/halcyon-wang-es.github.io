@@ -276,3 +276,66 @@ pre,
 [data-user-color-scheme="dark"] .page-content tbody tr:nth-child(even) {
   background: rgba(255, 255, 255, 0.03);
 }
+
+/* ===== Dark mode readability fix ===== */
+
+[data-user-color-scheme="dark"] body,
+[data-user-color-scheme="dark"] .markdown-body,
+[data-user-color-scheme="dark"] .post-content,
+[data-user-color-scheme="dark"] .index-content,
+[data-user-color-scheme="dark"] .note,
+[data-user-color-scheme="dark"] .page-content {
+  color: #dbe4f0;
+}
+
+/* 页面标题、文章标题 */
+[data-user-color-scheme="dark"] .post-title,
+[data-user-color-scheme="dark"] .page-header h1,
+[data-user-color-scheme="dark"] .page-title,
+[data-user-color-scheme="dark"] .markdown-body h1,
+[data-user-color-scheme="dark"] .markdown-body h2,
+[data-user-color-scheme="dark"] .markdown-body h3,
+[data-user-color-scheme="dark"] .markdown-body h4,
+[data-user-color-scheme="dark"] .post-content h1,
+[data-user-color-scheme="dark"] .post-content h2,
+[data-user-color-scheme="dark"] .post-content h3,
+[data-user-color-scheme="dark"] .post-content h4,
+[data-user-color-scheme="dark"] .page-content h1,
+[data-user-color-scheme="dark"] .page-content h2,
+[data-user-color-scheme="dark"] .page-content h3,
+[data-user-color-scheme="dark"] .page-content h4 {
+  color: #f3f7ff;
+}
+
+/* 首页 banner 文案 */
+[data-user-color-scheme="dark"] .banner-text,
+[data-user-color-scheme="dark"] .banner-text .h2,
+[data-user-color-scheme="dark"] .banner-text .slogan,
+[data-user-color-scheme="dark"] .banner-text .text {
+  color: #eef2ff;
+}
+
+/* 普通段落和列表 */
+[data-user-color-scheme="dark"] p,
+[data-user-color-scheme="dark"] li,
+[data-user-color-scheme="dark"] .markdown-body p,
+[data-user-color-scheme="dark"] .markdown-body li,
+[data-user-color-scheme="dark"] .post-content p,
+[data-user-color-scheme="dark"] .post-content li,
+[data-user-color-scheme="dark"] .page-content p,
+[data-user-color-scheme="dark"] .page-content li {
+  color: #d6deeb;
+}
+
+/* 次级文字 */
+[data-user-color-scheme="dark"] .post-meta,
+[data-user-color-scheme="dark"] .meta,
+[data-user-color-scheme="dark"] .excerpt,
+[data-user-color-scheme="dark"] .description {
+  color: #aeb8c8;
+}
+
+/* 链接 */
+[data-user-color-scheme="dark"] a {
+  color: #c7d2fe;
+}

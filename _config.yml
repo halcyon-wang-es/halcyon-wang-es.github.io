@@ -100,8 +100,15 @@ ignore:
 theme: fluid
 
 markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
   plugins:
     - "@traptitech/markdown-it-katex"
+    - "markdown-it-mark"
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
